@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign Up</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a 0%,#111827 45%,#1e293b 100%);
+}
+
+/* Signup Card */
+form{
+    width:420px;
+    padding:40px;
+    border-radius:18px;
+    background:rgba(255,255,255,0.06);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.12);
+    box-shadow:0 15px 40px rgba(0,0,0,.45);
+}
+
+h2{
+    text-align:center;
+    color:#fff;
+    margin-bottom:30px;
+    font-size:30px;
+    font-weight:600;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    color:#e5e7eb;
+    font-size:15px;
+    font-weight:500;
+}
+
+input{
+    width:100%;
+    padding:14px 16px;
+    margin-bottom:20px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.1);
+    color:#fff;
+    font-size:15px;
+    transition:.3s;
+}
+
+input::placeholder{
+    color:#9ca3af;
+}
+
+input:focus{
+    border-color:#3b82f6;
+    box-shadow:0 0 8px rgba(59,130,246,.4);
+    background:rgba(255,255,255,0.12);
+}
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(37,99,235,.4);
+}
+
+.login-link{
+    margin-top:20px;
+    text-align:center;
+    color:#d1d5db;
+    font-size:15px;
+}
+
+.login-link a{
+    color:#60a5fa;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.login-link a:hover{
+    text-decoration:underline;
+}
+</style>
+
+</head>
+<body>
+<div class="container">
+
+<form action="SignupServ" method="post">
+
+    <h2>Create Account</h2>
+
+    <label>Username</label>
+    <input type="text" name="username" placeholder="Enter username" required>
+
+    <label>Email</label>
+    <input type="email" name="email" placeholder="Enter email address" required>
+
+    <label>Phone Number</label>
+    <input type="tel" name="phone" placeholder="Enter phone number" required>
+
+    <label>Password</label>
+    <input type="password" name="password" placeholder="Create password" minlength="6" required>
+
+    <button type="submit">Sign Up</button>
+
+    <div class="login-link">
+        Already have an account?
+        <a href="login.html">Login</a>
+    </div>
+
+</form>
+</div>
+
+</body>
+</html>

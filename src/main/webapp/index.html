@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>National Destiny Bank</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+    color:white;
+}
+
+/* Navbar */
+
+nav{
+    height:75px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 70px;
+    background:#111827;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+nav h2{
+    color:#60a5fa;
+}
+
+.nav-btn{
+    display:flex;
+    gap:15px;
+}
+
+.nav-btn a{
+    text-decoration:none;
+    padding:10px 22px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-btn a:first-child{
+    border:2px solid #3b82f6;
+    color:#60a5fa;
+}
+
+.nav-btn a:last-child{
+    background:#2563eb;
+    color:white;
+}
+
+.nav-btn a:hover{
+    transform:translateY(-2px);
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:90px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    width:65%;
+    margin:auto;
+    color:#d1d5db;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:14px 35px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* Advertisement */
+
+.advertisement{
+    padding:50px;
+}
+
+.advertisement h2{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.ad-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.ad-card{
+    width:330px;
+    padding:30px;
+    background:rgba(255,255,255,.06);
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.ad-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 25px rgba(37,99,235,.25);
+}
+
+.ad-card h3{
+    color:#60a5fa;
+    margin-bottom:15px;
+}
+
+/* Services */
+
+.services{
+    padding:60px;
+}
+
+.services h2{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.service-card{
+    padding:30px;
+    background:rgba(255,255,255,.05);
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,.4);
+}
+
+.service-card h3{
+    color:#60a5fa;
+    margin-bottom:15px;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+    background:#111827;
+    color:#9ca3af;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>🏦 National Destiny Bank</h2>
+
+    <div class="nav-btn">
+        <a href="login.html">Login</a>
+        <a href="Signup.html">Sign Up</a>
+    </div>
+</nav>
+
+<section class="hero">
+
+    <h1>Welcome to National Destiny Bank</h1>
+
+    <p>
+        Trusted Banking for Every Dream. Secure your savings,
+        manage your finances, and enjoy seamless digital banking
+        with India's trusted banking partner.
+    </p>
+
+    <a href="login.html" class="btn">Start Banking</a>
+
+</section>
+
+<section class="advertisement">
+
+    <h2>Featured Offers</h2>
+
+    <div class="ad-container">
+
+        <div class="ad-card">
+            <h3>💳 Premium Credit Card</h3>
+            <p>Get up to <b>10% Cashback</b> on Shopping and Dining.</p>
+        </div>
+
+        <div class="ad-card">
+            <h3>🏡 Home Loan</h3>
+            <p>Interest starts from <b>7.99%</b> with instant approval.</p>
+        </div>
+
+        <div class="ad-card">
+            <h3>🚗 Vehicle Loan</h3>
+            <p>Drive your dream car with flexible EMI options.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="services">
+
+    <h2>Our Banking Services</h2>
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <h3>💰 Savings Account</h3>
+            <p>Safe and secure savings with attractive interest rates.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>📱 Mobile Banking</h3>
+            <p>Bank anytime, anywhere with our secure digital services.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>🏦 Fixed Deposit</h3>
+            <p>Grow your wealth with guaranteed returns.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>🛡 Insurance</h3>
+            <p>Protect your family with affordable insurance plans.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    © 2026 National Destiny Bank | Secure • Trusted • Reliable
+
+</footer>
+
+</body>
+</html>
